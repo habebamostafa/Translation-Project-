@@ -1,11 +1,17 @@
-# import streamlit as st
+#########################################################################################
+# this code for streamlit the Translation Project
+#########################################################################################
 
+# this code test for stream sharing and test it is cloud 
+
+# import streamlit as st
 # st.title("Text Translation App")
 # input_text = st.text_area("Enter text to translate", "")
-
 # if st.button("Translate"):
 #     st.write("Translated Text:", input_text[::-1])  # For demo, reverse text
 
+
+# the Actual code uesd 
 import streamlit as st
 import tempfile
 
@@ -50,7 +56,7 @@ elif page == "Audio Translation":
             st.write(f"Audio saved at: {audio_file_path}")
 
     # Upload audio file
-    audio_file = st.file_uploader("Or Upload Audio File", type=["wav", "mp3", "ogg"])
+    audio_file = st.file_uploader("Or Upload Audio File", type=["wav", "mp3"])
     if audio_file is not None:
         st.audio(audio_file, format='audio/wav')
         st.write("Audio file uploaded successfully.")
